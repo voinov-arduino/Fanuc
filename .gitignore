@@ -3,3 +3,9 @@
 __pycache__
 tests/bytestring
 tests/bytestring_back
+offsets
+offsets_b_2.json
+offsets_backup.json
+offsets.json
+lock_tests.py
+to_webgl

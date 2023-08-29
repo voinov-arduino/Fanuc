@@ -1,6 +1,16 @@
+import json
+
 import zmq
 import struct
 from time import sleep
+from dto import Coordinate3D, LidarOffsets
+
+
+def calculate_lidar_offsets(lidar_zero_coords: Coordinate3D, lidar_value: float, welder_zero_coords: Coordinate3D):
+    axis_offsets = Coordinate3D(x=lidar_zero_coords.x - welder_zero_coords.x,
+                                y=lidar_zero_coords.y - welder_zero_coords.y,
+                                z=lidar_zero_coords.z - welder_zero_coords.z)
+    return LidarOffsets(axis=axis_offsets, lidar_offset=lidar_value)
 
 
 def read_char(buffer: bytes, n=1):
@@ -46,9 +56,29 @@ if __name__ == '__main__':
     socket = context.socket(zmq.REQ)
     socket.connect("tcp://192.168.0.54:6666")
 
-    while True:
-        socket.send_string('alalal')
-        message = socket.recv()
-        print(get_coords(bytearray(message)))
+    lidar_zero_coords = Coordinate3D(-309.315, -105.257, -409.646)
+    lidar_value = 50
+    welder_zero_coords = Coordinate3D(-206.348, -137.108, -357.546)
+    offsets = calculate_lidar_offsets(lidar_zero_coords, lidar_value, welder_zero_coords)
+    data = {
+        "jsonrpc": "2.0",
+        "method": "set_offsets",
+        "payload": offsets.as_dict()
+    }
+    socket.send_json(data)
+    message = socket.recv_json()
+    print(message)
 
-        # sleep(0.5)
+    while True:
+        data = {
+            "jsonrpc": "2.0",
+            "method": "get_state"
+        }
+        socket.send_json(data)
+        message = socket.recv_json()
+        print(message)
+        if message['result']['render_queue']:
+            f = open('to_webgl', 'w')
+            json.dump(message, f)
+            f.close()
+        sleep(0.5)
