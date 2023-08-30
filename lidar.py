@@ -1,8 +1,6 @@
-import random
 from threading import Thread
 from fanuc_service import FanucService
 from pymodbus.client.sync import ModbusTcpClient
-from time import sleep
 
 
 class SyncLidar:
