@@ -1,5 +1,7 @@
 import json
 
+from lidar.simple_lidar import current_distance_fixed # Импорт модуля для измерения расстояния
+
 import zmq
 import struct
 from time import sleep
@@ -13,7 +15,7 @@ def calculate_lidar_offsets(lidar_zero_coords: Coordinate3D, lidar_value: float,
     return LidarOffsets(axis=axis_offsets, lidar_offset=lidar_value)
 
 
-def read_char(buffer: bytes, n=1):
+def read_char(buffer: bytes, n=1):  
     chars = struct.unpack('B' * n, buffer[:1 * n])
     new_buffer = buffer[1 * n:]
     return chars, new_buffer
@@ -52,10 +54,13 @@ def get_coords(bytes_str: bytes) -> str:
 
 
 if __name__ == '__main__':
+    previous_lidar_position = None
+    height_data_file = 'height_data.txt' # Костыль, обещаю докручу GUI
+    
     context = zmq.Context()
     socket = context.socket(zmq.REQ)
     socket.connect("tcp://192.168.0.54:6666")
-
+    
     lidar_zero_coords = Coordinate3D(-309.315, -105.257, -409.646)
     lidar_value = 50
     welder_zero_coords = Coordinate3D(-206.348, -137.108, -357.546)
@@ -65,11 +70,21 @@ if __name__ == '__main__':
         "method": "set_offsets",
         "payload": offsets.as_dict()
     }
+    
+    
     socket.send_json(data)
     message = socket.recv_json()
     print(message)
 
     while True:
+        if previous_lidar_position is None or offsets!=previous_lidar_position:
+            lidar_distance = current_distance_fixed
+            with open(height_data_file, 'a') as file:
+                file.write(f'Lidar Position: {offsets}, Distance: {lidar_distance} cm')
+            print(f'Lidar Position: {offsets}, Distance: {lidar_distance} cm')
+            previous_lidar_position = offsets
+        sleep(0.1)
+        
         data = {
             "jsonrpc": "2.0",
             "method": "get_state"

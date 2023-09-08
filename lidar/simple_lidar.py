@@ -1,4 +1,4 @@
-from pymodbus.client.sync import ModbusTcpClient
+from pymodbus import ModbusTcpClient
 from serial import Serial
 from time import sleep
 
