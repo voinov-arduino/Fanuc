@@ -9,6 +9,27 @@ def create_socket(ctx: Context, url: str) -> Socket:
     socket.RCVTIMEO = 10000
     socket.connect(url)
     return socket
+def replace_arc_strings(filename):
+    try:
+        new_filename = "arc_" + filename
+
+        with open(filename, 'r') as old_file:
+            lines = old_file.readlines()
+
+        for i, line in enumerate(lines):
+            if "Arc Start" in line:
+                lines[i] = "Out[40]=1\n"
+            elif "Arc End" in line:
+                lines[i] = "Out[40]=0\n"
+        with open(new_filename, 'w') as new_file:
+            new_file.writelines(lines)
+
+        print(f'Замена выполнена успешно. Создан новый файл: {new_filename}')
+    except FileNotFoundError:
+        print(f'Файл {filename} не найден')
+    except Exception as e:
+        print(f'Произошла ошибка: {str(e)}')
+
 
 
 def send_file_to_robot(filename: str, full_filepath: str):
