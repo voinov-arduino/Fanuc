@@ -10,11 +10,12 @@ def create_socket(ctx: Context, url: str) -> Socket:
     socket.connect(url)
     return socket
 
+
 def replace_arc_strings(filename):
     try:
-        new_filename = "arc_" + filename
-        with open(filename, 'r') as old_file:
-            lines = old_file.readlines()
+        new_filename = f'{filename}_lidar'
+        with open(filename, 'r') as welding_file:
+            lines = welding_file.readlines()
 
         for i, line in enumerate(lines):
             if "Arc Start" in line:
@@ -22,8 +23,8 @@ def replace_arc_strings(filename):
             elif "Arc End" in line:
                 lines[i] = "Out[40]=0\n"
 
-        with open(new_filename, 'w') as new_file:
-            new_file.writelines(lines)
+        with open(new_filename, 'w') as scanning_file:
+            scanning_file.writelines(lines)
 
         print(f'Замена выполнена успешно. Создан новый файл: {new_filename}')
     except FileNotFoundError:
