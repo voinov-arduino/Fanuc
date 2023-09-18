@@ -25,3 +25,4 @@ with open(output_filename, "w") as output_file:
             previous_x, previous_y, previous_z = x, y, z
         else:
             output_file.write(line)
+            i += 1
