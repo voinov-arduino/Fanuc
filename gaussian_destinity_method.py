@@ -22,9 +22,10 @@ def process_gcode_with_gaussian_density(input_filename):
                     # Вычислите плотность вероятности
                     density_x = norm.pdf(x, middle_x, sigma)
                     density_y = norm.pdf(y, middle_y, sigma)
-                    i += 1
                     output_line = f'X = {density_x:.3f} mm, Y = {density_y:.3f} mm, Z = {z:.3f} mm,\n'
                     output_file.write(output_line)
+                    i += 1
                 previous_x, previous_y, previous_z = x, y, z
             else:
                 output_file.write(line)
+                i += 1
