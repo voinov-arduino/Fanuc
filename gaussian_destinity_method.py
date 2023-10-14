@@ -19,7 +19,7 @@ def process_gcode_with_gaussian_density(input_filename):
                     middle_x = (x + previous_x) / 2
                     middle_y = (y + previous_y) / 2
                     sigma = 0.9
-                    # Вычислите плотность вероятности
+                    # Вычисление плотности вероятности
                     density_x = norm.pdf(x, middle_x, sigma)
                     density_y = norm.pdf(y, middle_y, sigma)
                     output_line = f'X = {density_x:.3f} mm, Y = {density_y:.3f} mm, Z = {z:.3f} mm,\n'
