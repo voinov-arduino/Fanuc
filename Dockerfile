@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.8
 
 WORKDIR /lidar
 
@@ -11,3 +11,5 @@ COPY . .
 RUN ./eip_driver
 
 CMD ["python", "main.py"]
+
+CMD ["bash"]
