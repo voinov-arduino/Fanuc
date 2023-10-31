@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-31T12:02:56.119Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0 (Edition Yx GX 03)" etag="0rOxWJjybwBpyOqov_kO" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-31T12:06:13.363Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="UR1gMXF6MonV69kU_dbW" version="22.0.8" type="github">
   <diagram name="Page-1" id="5f0bae14-7c28-e335-631c-24af17079c00">
-    <mxGraphModel dx="2061" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3283" dy="1192" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,13 +23,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-2" value="Opener&lt;br&gt;(регистры)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" vertex="1" parent="1">
-          <mxGeometry x="200" y="335" width="80" height="40" as="geometry" />
+        <mxCell id="WfGRSSMyw_llNKsG44EG-2" value="Opener&lt;br&gt;(регистры)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" parent="1" vertex="1">
+          <mxGeometry y="280" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-3" value="Server To ZMQ" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-3" value="Server To ZMQ" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="530" y="680" width="330" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="39150e848f15840c-3" target="WfGRSSMyw_llNKsG44EG-3">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="39150e848f15840c-3" target="WfGRSSMyw_llNKsG44EG-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="690" y="670" as="targetPoint" />
             <Array as="points">
@@ -37,10 +37,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-12" value="Lidar" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-12" value="Lidar" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="120" y="680" width="330" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="39150e848f15840c-3" target="WfGRSSMyw_llNKsG44EG-12">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="39150e848f15840c-3" target="WfGRSSMyw_llNKsG44EG-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="280" y="510" />
@@ -48,10 +48,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-19" value="Общаемся по ftp&lt;br&gt;Обрабатываем файлы sr[20] - имя файла&lt;br&gt;R[30] - начать выполнять&lt;br&gt;R[31] - busy / free" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-19" value="Общаемся по ftp&lt;br&gt;Обрабатываем файлы sr[20] - имя файла&lt;br&gt;R[30] - начать выполнять&lt;br&gt;R[31] - busy / free" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="110" width="300" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="520" y="410" as="targetPoint" />
             <mxPoint x="611" y="290" as="sourcePoint" />
@@ -61,25 +61,25 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-20" value="Крутим maketp + получаем из него состояние выполнения&lt;br&gt;Создаем УП для лидара (+)&lt;br&gt;Определяет и передает оффсеты на малинку чтобы на выходе получить (x,y,z)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-20" value="Крутим maketp + получаем из него состояние выполнения&lt;br&gt;Создаем УП для лидара (+)&lt;br&gt;Определяет и передает оффсеты на малинку чтобы на выходе получить (x,y,z)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="540" y="110" width="300" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-21" value="Отрисовка на PC" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-21" value="Отрисовка на PC" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="840" y="375" width="330" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.501;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="39150e848f15840c-3" target="WfGRSSMyw_llNKsG44EG-21">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.501;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="39150e848f15840c-3" target="WfGRSSMyw_llNKsG44EG-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WfGRSSMyw_llNKsG44EG-23" target="39150e848f15840c-3">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="WfGRSSMyw_llNKsG44EG-23" target="39150e848f15840c-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-23" value="Client to Opener&lt;br&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-23" value="Client to Opener&lt;br&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="-240" y="375" width="330" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-26" value="Передаем координаты в каждый момент времени&lt;br&gt;передает сигнал о том нужно ли выключать измерение" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-26" value="Передаем координаты в каждый момент времени&lt;br&gt;передает сигнал о том нужно ли выключать измерение" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-230" y="420" width="310" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="39150e848f15840c-3" target="39150e848f15840c-1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="39150e848f15840c-3" target="39150e848f15840c-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="460" y="350" />
@@ -87,19 +87,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-29" value="Имя файла&lt;br&gt;Начать выполнять" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-29" value="Имя файла&lt;br&gt;Начать выполнять" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="330" y="305" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-34" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;.tp&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-34" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;.tp&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="570" y="310" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=105;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="39150e848f15840c-3" target="39150e848f15840c-1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=105;entryDy=0;entryPerimeter=0;" parent="1" source="39150e848f15840c-3" target="39150e848f15840c-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-38" value=".tp&lt;br&gt;печать / лидар" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-38" value=".tp&lt;br&gt;печать / лидар" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="440" y="130" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WfGRSSMyw_llNKsG44EG-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.377;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=220;exitDy=170;exitPerimeter=0;" edge="1" parent="1" source="39150e848f15840c-1" target="39150e848f15840c-3">
+        <mxCell id="WfGRSSMyw_llNKsG44EG-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=220;exitDy=170;exitPerimeter=0;" parent="1" source="39150e848f15840c-1" target="WfGRSSMyw_llNKsG44EG-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
